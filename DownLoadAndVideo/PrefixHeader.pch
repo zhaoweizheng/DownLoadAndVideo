@@ -9,7 +9,177 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define UI_RGBA(r,g,b,a)           [UIColor colorWithRed:(float)r/255.0f green:(float)g/255.0f blue:(float)b/255.0f alpha:a]
+
+
+#define UI_RGBA_HEX(rgbValue)       [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+
+/**
+ *  全局导航颜色
+ */
+#define GLOBLE_NAVIGATION_COLOR    UI_RGBA_HEX(0x2AA515)
+
+
+/**
+ *  TabBar颜色
+ */
+#define GLOBLE_TABBAR_COLOR        UI_RGBA_HEX(0xE9632A)
+
+
+/**
+ *  全局背景颜色
+ */
+#define GLOBLE_BACKGROUND_COLOR    UI_RGBA(241, 241, 241, 1)
+
+/**
+ *  灰色1 cccccc
+ */
+#define GLOBLE_GRAY_COLOR_1      UI_RGBA_HEX(0xCCCCCC)
+
+/**
+ *  灰色2 999999
+ */
+#define GLOBLE_GRAY_COLOR_2      UI_RGBA_HEX(0x999999)
+#define GLOBLE_GRAY_COLOR_2_HEX  @"#999999"
+
+/**
+ *  灰色3 666666
+ */
+#define GLOBLE_GRAY_COLOR_3      UI_RGBA_HEX(0x666666)
+#define GLOBLE_GRAY_COLOR_3_HEX  @"#666666"
+
+#define GLOBLE_GRAY_COLOR_5      UI_RGBA_HEX(0x55555)
+#define GLOBLE_GRAY_COLOR_5_HEX  @"#555555"
+
+
+/**
+ *  文本颜色
+ */
+#define GLOBLE_TEXT_COLOR        UI_RGBA(51,51,51,1)
+#define GLOBLE_TEXT_COLOR_HEX    @"#333333"
+
+
+#define USERINFOManager [UserInfoManager sharedManager]
+
+
+#define WEAKSELF typeof(self) __weak weakSelf = self;
+/* ----------------------------------通知 EOF ------------------------------- */
+
+
+
+/* ----------------------------------版本 BOF ------------------------------- */
+
+/**
+ *  大于等于
+ */
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+
+/**
+ *  小于
+ */
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+
+/**
+ *  等于
+ */
+#define SYSTEM_VERSION_EQUAL(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+/* ----------------------------------版本 EOF ------------------------------- */
+
+
+/* ----------------------------------手机型号 BOF ------------------------------- */
+/**
+ *  手机型号等于4
+ */
+#define MOBILEMODEL_4S        [[UIScreen mainScreen] currentMode].size.height < 1136 ? YES : NO
+
+/**
+ *  手机型号等于5
+ */
+#define MOBILEMODEL_5         [[UIScreen mainScreen] currentMode].size.height == 1136 ? YES : NO
+
+/**
+ *  手机型号5之后包含5
+ */
+#define MOBILEMODEL_GREATER_THAN_OR_EQUAL_TO_5  [[UIScreen mainScreen] currentMode].size.height >= 1136 ? YES : NO
+
+/**
+ *  手机型号等于6
+ */
+#define MOBILEMODEL_6         [[UIScreen mainScreen] currentMode].size.height == 1334 ? YES : NO
+
+/**
+ *  手机型号6之后包含6
+ */
+#define MOBILEMODEL_GREATER_THAN_OR_EQUAL_TO_6  [[UIScreen mainScreen] currentMode].size.height >= 1334  ? YES : NO
+
+/**
+ *  手机型号6p
+ */
+#define MOBILEMODEL_6P        [[UIScreen mainScreen] currentMode].size.height == 2208 ? YES : NO
+
+/**
+ *  手机型号6p之前
+ */
+#define MOBILEMODEL_LESS_THAN     [[UIScreen mainScreen] currentMode].size.height < 2208 ? YES : NO
+/* ----------------------------------手机型号 EOF ------------------------------- */
+
+//***** ***** ***** ***** ***** other ***** ***** ***** ***** *****/
+#define APP_DELEGATE ((AppDelegate *)[UIApplication sharedApplication].delegate)
+//App 版本号
+#define APP_VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+// RGB颜色
+#define RGB(r,g,b) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1]
+
+// 导航栏高度
+#define NAVIGATION_BAR_HEIGHT (20+44)
+
+// 标签栏高度
+#define TAB_BAR_HEIGHT 49
+
+#define SCREEN_WIDTH  ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+#define WIDTH_SCALE [UIScreen mainScreen].bounds.size.width/375
+#define HEIGHT_SCALE [UIScreen mainScreen].bounds.size.height/667
+
+// 系统版本
+#define SYSTEM_VERSION [[[UIDevice currentDevice] systemVersion] doubleValue]
+#define DATABASE_ENGINE       [DatabaseEngine sharedEngine]
+
+// 导航栏右按钮
+#define NAVIGATION_BAR_RIGHT_BUTTON(x, y, w, h, normal, selected, sel)\
+{\
+UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];\
+button.frame = CGRectMake(x, y, w, h);\
+[button setImage:[UIImage imageNamed:normal] forState:UIControlStateNormal];\
+[button setImage:[UIImage imageNamed:selected] forState:UIControlStateHighlighted];\
+[button addTarget:self action:@selector(sel) forControlEvents:UIControlEventTouchUpInside];\
+UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithCustomView:button];\
+self.navigationItem.rightBarButtonItem = buttonItem;\
+}
+
+
+// 导航栏左按钮
+#define NAVIGATION_BAR_LEFT_BUTTON(x, y, w, h, normal, selected, sel)\
+{\
+UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];\
+button.frame = CGRectMake(x, y, w, h);\
+[button setImage:[UIImage imageNamed:normal] forState:UIControlStateNormal];\
+[button setImage:[UIImage imageNamed:selected] forState:UIControlStateSelected];\
+[button addTarget:self action:@selector(sel) forControlEvents:UIControlEventTouchUpInside];\
+UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithCustomView:button];\
+self.navigationItem.leftBarButtonItem = buttonItem;\
+}
+
+//二进制颜色值
+#define kUIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+//字体
+#define KFont(i)  [UIFont systemFontOfSize:i]
 
 #endif /* PrefixHeader_pch */

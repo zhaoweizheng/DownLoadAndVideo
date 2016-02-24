@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HomeViewCell.h
 //  DownLoadAndVideo
 //
 //  Created by mistong on 16/2/24.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HomeViewCell : UITableViewCell
 
 @end
-

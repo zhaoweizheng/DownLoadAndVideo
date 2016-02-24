@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		02A3B7811C7D610700DB54DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B7801C7D610700DB54DD /* main.m */; };
 		02A3B7841C7D610800DB54DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B7831C7D610800DB54DD /* AppDelegate.m */; };
-		02A3B7871C7D610800DB54DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B7861C7D610800DB54DD /* ViewController.m */; };
 		02A3B78A1C7D610800DB54DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B7881C7D610800DB54DD /* Main.storyboard */; };
 		02A3B78C1C7D610800DB54DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B78B1C7D610800DB54DD /* Assets.xcassets */; };
 		02A3B78F1C7D610800DB54DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B78D1C7D610800DB54DD /* LaunchScreen.storyboard */; };
@@ -21,6 +20,16 @@
 		02A3B7C21C7D79B400DB54DD /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B7AE1C7D79B400DB54DD /* HomeViewController.m */; };
 		02A3B7C31C7D79B400DB54DD /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B7B41C7D79B400DB54DD /* MessageViewController.m */; };
 		02A3B7C41C7D79B400DB54DD /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B7BA1C7D79B400DB54DD /* MineViewController.m */; };
+		02A3B7D51C7D850700DB54DD /* Discover.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B7CB1C7D850700DB54DD /* Discover.plist */; };
+		02A3B7D61C7D850700DB54DD /* gongfuxiongmao.png in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B7CD1C7D850700DB54DD /* gongfuxiongmao.png */; };
+		02A3B7D71C7D850700DB54DD /* lieren.png in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B7CE1C7D850700DB54DD /* lieren.png */; };
+		02A3B7D81C7D850700DB54DD /* meirenyu.png in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B7CF1C7D850700DB54DD /* meirenyu.png */; };
+		02A3B7D91C7D850700DB54DD /* sandabaigujing.png in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B7D01C7D850700DB54DD /* sandabaigujing.png */; };
+		02A3B7DA1C7D850700DB54DD /* taipingyang.png in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B7D11C7D850700DB54DD /* taipingyang.png */; };
+		02A3B7DB1C7D850700DB54DD /* xiaohuangren.png in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B7D21C7D850700DB54DD /* xiaohuangren.png */; };
+		02A3B7DC1C7D850700DB54DD /* xiongchumo.png in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B7D31C7D850700DB54DD /* xiongchumo.png */; };
+		02A3B7DD1C7D850700DB54DD /* yuanlijuexing.png in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B7D41C7D850700DB54DD /* yuanlijuexing.png */; };
+		02A3B7E01C7D863500DB54DD /* HomeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B7DF1C7D863500DB54DD /* HomeViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,13 +37,11 @@
 		02A3B7801C7D610700DB54DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		02A3B7821C7D610700DB54DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		02A3B7831C7D610800DB54DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		02A3B7851C7D610800DB54DD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		02A3B7861C7D610800DB54DD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		02A3B7891C7D610800DB54DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02A3B78B1C7D610800DB54DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02A3B78E1C7D610800DB54DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02A3B7901C7D610800DB54DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02A3B7961C7D628000DB54DD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		02A3B7961C7D628000DB54DD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
 		02A3B7981C7D79B400DB54DD /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
 		02A3B7991C7D79B400DB54DD /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
 		02A3B79A1C7D79B400DB54DD /* CustomTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabbar.h; sourceTree = "<group>"; };
@@ -51,6 +58,17 @@
 		02A3B7B41C7D79B400DB54DD /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		02A3B7B91C7D79B400DB54DD /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		02A3B7BA1C7D79B400DB54DD /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		02A3B7CB1C7D850700DB54DD /* Discover.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Discover.plist; sourceTree = "<group>"; };
+		02A3B7CD1C7D850700DB54DD /* gongfuxiongmao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gongfuxiongmao.png; sourceTree = "<group>"; };
+		02A3B7CE1C7D850700DB54DD /* lieren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lieren.png; sourceTree = "<group>"; };
+		02A3B7CF1C7D850700DB54DD /* meirenyu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meirenyu.png; sourceTree = "<group>"; };
+		02A3B7D01C7D850700DB54DD /* sandabaigujing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sandabaigujing.png; sourceTree = "<group>"; };
+		02A3B7D11C7D850700DB54DD /* taipingyang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taipingyang.png; sourceTree = "<group>"; };
+		02A3B7D21C7D850700DB54DD /* xiaohuangren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xiaohuangren.png; sourceTree = "<group>"; };
+		02A3B7D31C7D850700DB54DD /* xiongchumo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xiongchumo.png; sourceTree = "<group>"; };
+		02A3B7D41C7D850700DB54DD /* yuanlijuexing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yuanlijuexing.png; sourceTree = "<group>"; };
+		02A3B7DE1C7D863500DB54DD /* HomeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewCell.h; sourceTree = "<group>"; };
+		02A3B7DF1C7D863500DB54DD /* HomeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +101,10 @@
 		02A3B77E1C7D610700DB54DD /* DownLoadAndVideo */ = {
 			isa = PBXGroup;
 			children = (
+				02A3B7C51C7D82A600DB54DD /* 公共方法 */,
 				02A3B7821C7D610700DB54DD /* AppDelegate.h */,
 				02A3B7831C7D610800DB54DD /* AppDelegate.m */,
-				02A3B7851C7D610800DB54DD /* ViewController.h */,
-				02A3B7861C7D610800DB54DD /* ViewController.m */,
-				02A3B7961C7D628000DB54DD /* PrefixHeader.pch */,
+				02A3B7C91C7D850700DB54DD /* Resource */,
 				02A3B7971C7D79B400DB54DD /* TabController */,
 				02A3B79E1C7D79B400DB54DD /* ViewController */,
 				02A3B7881C7D610800DB54DD /* Main.storyboard */,
@@ -227,6 +244,8 @@
 		02A3B7B01C7D79B400DB54DD /* view */ = {
 			isa = PBXGroup;
 			children = (
+				02A3B7DE1C7D863500DB54DD /* HomeViewCell.h */,
+				02A3B7DF1C7D863500DB54DD /* HomeViewCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -297,6 +316,46 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		02A3B7C51C7D82A600DB54DD /* 公共方法 */ = {
+			isa = PBXGroup;
+			children = (
+				02A3B7961C7D628000DB54DD /* PrefixHeader.pch */,
+			);
+			path = "公共方法";
+			sourceTree = "<group>";
+		};
+		02A3B7C91C7D850700DB54DD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				02A3B7CA1C7D850700DB54DD /* Discover */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		02A3B7CA1C7D850700DB54DD /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				02A3B7CB1C7D850700DB54DD /* Discover.plist */,
+				02A3B7CC1C7D850700DB54DD /* images */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		02A3B7CC1C7D850700DB54DD /* images */ = {
+			isa = PBXGroup;
+			children = (
+				02A3B7CD1C7D850700DB54DD /* gongfuxiongmao.png */,
+				02A3B7CE1C7D850700DB54DD /* lieren.png */,
+				02A3B7CF1C7D850700DB54DD /* meirenyu.png */,
+				02A3B7D01C7D850700DB54DD /* sandabaigujing.png */,
+				02A3B7D11C7D850700DB54DD /* taipingyang.png */,
+				02A3B7D21C7D850700DB54DD /* xiaohuangren.png */,
+				02A3B7D31C7D850700DB54DD /* xiongchumo.png */,
+				02A3B7D41C7D850700DB54DD /* yuanlijuexing.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -354,9 +413,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02A3B7DD1C7D850700DB54DD /* yuanlijuexing.png in Resources */,
+				02A3B7DB1C7D850700DB54DD /* xiaohuangren.png in Resources */,
 				02A3B78F1C7D610800DB54DD /* LaunchScreen.storyboard in Resources */,
+				02A3B7DA1C7D850700DB54DD /* taipingyang.png in Resources */,
+				02A3B7DC1C7D850700DB54DD /* xiongchumo.png in Resources */,
+				02A3B7D81C7D850700DB54DD /* meirenyu.png in Resources */,
 				02A3B78C1C7D610800DB54DD /* Assets.xcassets in Resources */,
+				02A3B7D61C7D850700DB54DD /* gongfuxiongmao.png in Resources */,
+				02A3B7D91C7D850700DB54DD /* sandabaigujing.png in Resources */,
 				02A3B78A1C7D610800DB54DD /* Main.storyboard in Resources */,
+				02A3B7D71C7D850700DB54DD /* lieren.png in Resources */,
+				02A3B7D51C7D850700DB54DD /* Discover.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,8 +438,8 @@
 				02A3B7BF1C7D79B400DB54DD /* TabBarViewController.m in Sources */,
 				02A3B7C11C7D79B400DB54DD /* DiscoverViewController.m in Sources */,
 				02A3B7BD1C7D79B400DB54DD /* CustomButton.m in Sources */,
-				02A3B7871C7D610800DB54DD /* ViewController.m in Sources */,
 				02A3B7841C7D610800DB54DD /* AppDelegate.m in Sources */,
+				02A3B7E01C7D863500DB54DD /* HomeViewCell.m in Sources */,
 				02A3B7C41C7D79B400DB54DD /* MineViewController.m in Sources */,
 				02A3B7C21C7D79B400DB54DD /* HomeViewController.m in Sources */,
 				02A3B7C31C7D79B400DB54DD /* MessageViewController.m in Sources */,
@@ -487,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/mst/Desktop/MyDemo/DownLoadAndVideo/DownLoadAndVideo/PrefixHeader.pch;
 				INFOPLIST_FILE = DownLoadAndVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mistong.www.DownLoadAndVideo;
@@ -498,6 +567,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/mst/Desktop/MyDemo/DownLoadAndVideo/DownLoadAndVideo/PrefixHeader.pch;
 				INFOPLIST_FILE = DownLoadAndVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mistong.www.DownLoadAndVideo;
@@ -524,6 +594,7 @@
 				02A3B7951C7D610800DB54DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
