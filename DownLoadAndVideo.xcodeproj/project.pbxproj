@@ -13,6 +13,14 @@
 		02A3B78A1C7D610800DB54DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B7881C7D610800DB54DD /* Main.storyboard */; };
 		02A3B78C1C7D610800DB54DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B78B1C7D610800DB54DD /* Assets.xcassets */; };
 		02A3B78F1C7D610800DB54DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B78D1C7D610800DB54DD /* LaunchScreen.storyboard */; };
+		02A3B7BD1C7D79B400DB54DD /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B7991C7D79B400DB54DD /* CustomButton.m */; };
+		02A3B7BE1C7D79B400DB54DD /* CustomTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B79B1C7D79B400DB54DD /* CustomTabbar.m */; };
+		02A3B7BF1C7D79B400DB54DD /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B79D1C7D79B400DB54DD /* TabBarViewController.m */; };
+		02A3B7C01C7D79B400DB54DD /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B7A21C7D79B400DB54DD /* ComposeViewController.m */; };
+		02A3B7C11C7D79B400DB54DD /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B7A81C7D79B400DB54DD /* DiscoverViewController.m */; };
+		02A3B7C21C7D79B400DB54DD /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B7AE1C7D79B400DB54DD /* HomeViewController.m */; };
+		02A3B7C31C7D79B400DB54DD /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B7B41C7D79B400DB54DD /* MessageViewController.m */; };
+		02A3B7C41C7D79B400DB54DD /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B7BA1C7D79B400DB54DD /* MineViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +35,22 @@
 		02A3B78E1C7D610800DB54DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02A3B7901C7D610800DB54DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02A3B7961C7D628000DB54DD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		02A3B7981C7D79B400DB54DD /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		02A3B7991C7D79B400DB54DD /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		02A3B79A1C7D79B400DB54DD /* CustomTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabbar.h; sourceTree = "<group>"; };
+		02A3B79B1C7D79B400DB54DD /* CustomTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabbar.m; sourceTree = "<group>"; };
+		02A3B79C1C7D79B400DB54DD /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		02A3B79D1C7D79B400DB54DD /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		02A3B7A11C7D79B400DB54DD /* ComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
+		02A3B7A21C7D79B400DB54DD /* ComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
+		02A3B7A71C7D79B400DB54DD /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		02A3B7A81C7D79B400DB54DD /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		02A3B7AD1C7D79B400DB54DD /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		02A3B7AE1C7D79B400DB54DD /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		02A3B7B31C7D79B400DB54DD /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		02A3B7B41C7D79B400DB54DD /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		02A3B7B91C7D79B400DB54DD /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		02A3B7BA1C7D79B400DB54DD /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +88,8 @@
 				02A3B7851C7D610800DB54DD /* ViewController.h */,
 				02A3B7861C7D610800DB54DD /* ViewController.m */,
 				02A3B7961C7D628000DB54DD /* PrefixHeader.pch */,
+				02A3B7971C7D79B400DB54DD /* TabController */,
+				02A3B79E1C7D79B400DB54DD /* ViewController */,
 				02A3B7881C7D610800DB54DD /* Main.storyboard */,
 				02A3B78B1C7D610800DB54DD /* Assets.xcassets */,
 				02A3B78D1C7D610800DB54DD /* LaunchScreen.storyboard */,
@@ -79,6 +105,196 @@
 				02A3B7801C7D610700DB54DD /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02A3B7971C7D79B400DB54DD /* TabController */ = {
+			isa = PBXGroup;
+			children = (
+				02A3B7981C7D79B400DB54DD /* CustomButton.h */,
+				02A3B7991C7D79B400DB54DD /* CustomButton.m */,
+				02A3B79A1C7D79B400DB54DD /* CustomTabbar.h */,
+				02A3B79B1C7D79B400DB54DD /* CustomTabbar.m */,
+				02A3B79C1C7D79B400DB54DD /* TabBarViewController.h */,
+				02A3B79D1C7D79B400DB54DD /* TabBarViewController.m */,
+			);
+			path = TabController;
+			sourceTree = "<group>";
+		};
+		02A3B79E1C7D79B400DB54DD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				02A3B79F1C7D79B400DB54DD /* Compose[发现] */,
+				02A3B7A51C7D79B400DB54DD /* Discover[发现] */,
+				02A3B7AB1C7D79B400DB54DD /* Home[主页] */,
+				02A3B7B11C7D79B400DB54DD /* Message[消息] */,
+				02A3B7B71C7D79B400DB54DD /* Mine[我的] */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		02A3B79F1C7D79B400DB54DD /* Compose[发现] */ = {
+			isa = PBXGroup;
+			children = (
+				02A3B7A01C7D79B400DB54DD /* controller */,
+				02A3B7A31C7D79B400DB54DD /* model */,
+				02A3B7A41C7D79B400DB54DD /* view */,
+			);
+			path = "Compose[发现]";
+			sourceTree = "<group>";
+		};
+		02A3B7A01C7D79B400DB54DD /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				02A3B7A11C7D79B400DB54DD /* ComposeViewController.h */,
+				02A3B7A21C7D79B400DB54DD /* ComposeViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		02A3B7A31C7D79B400DB54DD /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		02A3B7A41C7D79B400DB54DD /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		02A3B7A51C7D79B400DB54DD /* Discover[发现] */ = {
+			isa = PBXGroup;
+			children = (
+				02A3B7A61C7D79B400DB54DD /* controller */,
+				02A3B7A91C7D79B400DB54DD /* model */,
+				02A3B7AA1C7D79B400DB54DD /* view */,
+			);
+			path = "Discover[发现]";
+			sourceTree = "<group>";
+		};
+		02A3B7A61C7D79B400DB54DD /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				02A3B7A71C7D79B400DB54DD /* DiscoverViewController.h */,
+				02A3B7A81C7D79B400DB54DD /* DiscoverViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		02A3B7A91C7D79B400DB54DD /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		02A3B7AA1C7D79B400DB54DD /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		02A3B7AB1C7D79B400DB54DD /* Home[主页] */ = {
+			isa = PBXGroup;
+			children = (
+				02A3B7AC1C7D79B400DB54DD /* controller */,
+				02A3B7AF1C7D79B400DB54DD /* model */,
+				02A3B7B01C7D79B400DB54DD /* view */,
+			);
+			path = "Home[主页]";
+			sourceTree = "<group>";
+		};
+		02A3B7AC1C7D79B400DB54DD /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				02A3B7AD1C7D79B400DB54DD /* HomeViewController.h */,
+				02A3B7AE1C7D79B400DB54DD /* HomeViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		02A3B7AF1C7D79B400DB54DD /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		02A3B7B01C7D79B400DB54DD /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		02A3B7B11C7D79B400DB54DD /* Message[消息] */ = {
+			isa = PBXGroup;
+			children = (
+				02A3B7B21C7D79B400DB54DD /* controller */,
+				02A3B7B51C7D79B400DB54DD /* model */,
+				02A3B7B61C7D79B400DB54DD /* view */,
+			);
+			path = "Message[消息]";
+			sourceTree = "<group>";
+		};
+		02A3B7B21C7D79B400DB54DD /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				02A3B7B31C7D79B400DB54DD /* MessageViewController.h */,
+				02A3B7B41C7D79B400DB54DD /* MessageViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		02A3B7B51C7D79B400DB54DD /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		02A3B7B61C7D79B400DB54DD /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		02A3B7B71C7D79B400DB54DD /* Mine[我的] */ = {
+			isa = PBXGroup;
+			children = (
+				02A3B7B81C7D79B400DB54DD /* controller */,
+				02A3B7BB1C7D79B400DB54DD /* model */,
+				02A3B7BC1C7D79B400DB54DD /* view */,
+			);
+			path = "Mine[我的]";
+			sourceTree = "<group>";
+		};
+		02A3B7B81C7D79B400DB54DD /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				02A3B7B91C7D79B400DB54DD /* MineViewController.h */,
+				02A3B7BA1C7D79B400DB54DD /* MineViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		02A3B7BB1C7D79B400DB54DD /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		02A3B7BC1C7D79B400DB54DD /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +367,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02A3B7BF1C7D79B400DB54DD /* TabBarViewController.m in Sources */,
+				02A3B7C11C7D79B400DB54DD /* DiscoverViewController.m in Sources */,
+				02A3B7BD1C7D79B400DB54DD /* CustomButton.m in Sources */,
 				02A3B7871C7D610800DB54DD /* ViewController.m in Sources */,
 				02A3B7841C7D610800DB54DD /* AppDelegate.m in Sources */,
+				02A3B7C41C7D79B400DB54DD /* MineViewController.m in Sources */,
+				02A3B7C21C7D79B400DB54DD /* HomeViewController.m in Sources */,
+				02A3B7C31C7D79B400DB54DD /* MessageViewController.m in Sources */,
+				02A3B7C01C7D79B400DB54DD /* ComposeViewController.m in Sources */,
+				02A3B7BE1C7D79B400DB54DD /* CustomTabbar.m in Sources */,
 				02A3B7811C7D610700DB54DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
