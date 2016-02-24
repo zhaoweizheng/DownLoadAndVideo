@@ -26,6 +26,7 @@
 		02A3B78B1C7D610800DB54DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02A3B78E1C7D610800DB54DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02A3B7901C7D610800DB54DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02A3B7961C7D628000DB54DD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 				02A3B7831C7D610800DB54DD /* AppDelegate.m */,
 				02A3B7851C7D610800DB54DD /* ViewController.h */,
 				02A3B7861C7D610800DB54DD /* ViewController.m */,
+				02A3B7961C7D628000DB54DD /* PrefixHeader.pch */,
 				02A3B7881C7D610800DB54DD /* Main.storyboard */,
 				02A3B78B1C7D610800DB54DD /* Assets.xcassets */,
 				02A3B78D1C7D610800DB54DD /* LaunchScreen.storyboard */,
