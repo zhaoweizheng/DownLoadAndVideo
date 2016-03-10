@@ -81,7 +81,6 @@
         downLoadTaskT.sessionModel.urlString = urlKey;
         downLoadTaskT.sessionModel.extra = [dic objectForKey:@"downloadExtra"];
         
-        
         downLoadTaskT.delegate = self;
         [self.downloadTasks setObject:downLoadTaskT forKey:urlKey];
     }
