@@ -12,7 +12,6 @@
 		0252E4261C911DE8003F26D2 /* DownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0252E4211C911DE8003F26D2 /* DownloadTask.m */; };
 		0252E4271C911DE8003F26D2 /* SessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0252E4231C911DE8003F26D2 /* SessionModel.m */; };
 		0252E42A1C911E75003F26D2 /* HomeControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0252E4291C911E75003F26D2 /* HomeControllerModel.m */; };
-		0252E42D1C913FEA003F26D2 /* down.m in Sources */ = {isa = PBXBuildFile; fileRef = 0252E42C1C913FEA003F26D2 /* down.m */; };
 		02A3B7811C7D610700DB54DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B7801C7D610700DB54DD /* main.m */; };
 		02A3B7841C7D610800DB54DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B7831C7D610800DB54DD /* AppDelegate.m */; };
 		02A3B78A1C7D610800DB54DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B7881C7D610800DB54DD /* Main.storyboard */; };
@@ -49,8 +48,6 @@
 		0252E4231C911DE8003F26D2 /* SessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionModel.m; sourceTree = "<group>"; };
 		0252E4281C911E75003F26D2 /* HomeControllerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeControllerModel.h; sourceTree = "<group>"; };
 		0252E4291C911E75003F26D2 /* HomeControllerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeControllerModel.m; sourceTree = "<group>"; };
-		0252E42B1C913FEA003F26D2 /* down.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = down.h; sourceTree = "<group>"; };
-		0252E42C1C913FEA003F26D2 /* down.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = down.m; sourceTree = "<group>"; };
 		02A3B77C1C7D610700DB54DD /* DownLoadAndVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownLoadAndVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02A3B7801C7D610700DB54DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		02A3B7821C7D610700DB54DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,8 +116,6 @@
 				0252E4211C911DE8003F26D2 /* DownloadTask.m */,
 				0252E4221C911DE8003F26D2 /* SessionModel.h */,
 				0252E4231C911DE8003F26D2 /* SessionModel.m */,
-				0252E42B1C913FEA003F26D2 /* down.h */,
-				0252E42C1C913FEA003F26D2 /* down.m */,
 			);
 			path = DownLoad;
 			sourceTree = "<group>";
@@ -485,7 +480,6 @@
 				02A3B7BF1C7D79B400DB54DD /* TabBarViewController.m in Sources */,
 				02A3B7C11C7D79B400DB54DD /* DiscoverViewController.m in Sources */,
 				02A3B7BD1C7D79B400DB54DD /* CustomButton.m in Sources */,
-				0252E42D1C913FEA003F26D2 /* down.m in Sources */,
 				02A3B7841C7D610800DB54DD /* AppDelegate.m in Sources */,
 				0252E4251C911DE8003F26D2 /* DownloadManager.m in Sources */,
 				0252E4241C911DE8003F26D2 /* DownloadEntity.m in Sources */,
