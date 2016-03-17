@@ -96,4 +96,105 @@
     return DownloadStateFailed;
 }
 
+/**
+ *  获取任务状态
+ *
+ *  @param urlString 下载地址
+ *
+ *  @return 任务状态
+ */
+-(TaskState)getTaskState:(NSString *)urlString {
+
+    // 下载完成
+    if ([[DownloadManager sharedInstance] isCompletion:urlString]) {
+        return TaskCompleted;
+    }
+    // 查询未完成的任务列表
+    NSInteger index = [self isExit:urlString];
+    
+    // 不存在任务
+    if (index == -1) {
+        return TaskNoExistTask;
+    }
+    // 任务存在
+    else{
+        return TaskExistTask;
+    }
+}
+
+-(NSInteger)isExit:(NSString *)urlString{
+    
+    for (NSInteger i = 0; i < self.downloadArray.count; i ++) {
+        NSDictionary *dic = self.downloadArray[i];
+        NSString *url = [dic objectForKey:@"mpDownloadUrlString"];
+        if ([url isEqualToString:urlString]) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+
+/**
+ *  添加下载任务并下载
+ *
+ *  @param urlString 下载的地址
+ */
+-(DownloadState)addTaskWithDownLoad:(DownloadEntity *)downloadEntity {
+    DownloadTask *downLoadTaskT = [self getDownLoadTask:downloadEntity.downLoadUrlString];
+    
+    if (downLoadTaskT == nil) {
+        downLoadTaskT = [[DownloadTask alloc ] init];
+        [self.downloadTasks setObject:downLoadTaskT forKey:downloadEntity.downLoadUrlString];
+        DownloadState status =  [downLoadTaskT addTaskWithDownLoad:downloadEntity];
+        downLoadTaskT.delegate = self;
+        
+        // 保存任务状态
+        [self saveMPDownLoadTask];
+        
+        // 发送新任务通知
+        [self postDownLoadingTaskNotification];
+        
+        return status;
+    }
+    // 任务存在
+    return  [downLoadTaskT addTaskWithDownLoad:downloadEntity];
+}
+
+
+
+-(DownloadTask *)getDownLoadTask:(NSString *)urlkey{
+    return  [self.downloadTasks objectForKey:urlkey];
+}
+
+//　保存本地任务
+-(void)saveMPDownLoadTask{
+    NSString *filename = [self filePathWithFileName:downLoadTask];
+    for (NSString *string in self.downloadTasks.allKeys) {
+        DownloadTask *downLoadTaskT = [self.downloadTasks objectForKey:string];
+        NSMutableDictionary *session = [[NSMutableDictionary alloc ] init];
+        [session setObject:@(downLoadTaskT.sessionModel.downloadState) forKey:@"downloadState"];
+        [session setObject:string                            forKey:@"downloadUrlString"];
+        [session setObject:downLoadTaskT.sessionModel.extra forKey:@"downloadExtra"];
+        [session setObject:FileFullpath(string)            forKey:@"downLoadPath"];
+        
+        NSInteger index = [self isExit:string];
+        if (index == -1) {
+            [self.downloadArray addObject:session];
+        }else{
+            [self.downloadArray replaceObjectAtIndex:index withObject:session];
+        }
+    }
+    [self.downloadArray writeToFile:filename atomically:NO];
+}
+
+
+-(NSString *)filePathWithFileName:(NSString *)fileName
+{
+    NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+    NSString *path=[paths    objectAtIndex:0];
+    NSString *filename=[path stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.plist",fileName]];
+    return filename;
+}
+
 @end
