@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0252E4241C911DE8003F26D2 /* DownloadEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0252E41D1C911DE8003F26D2 /* DownloadEntity.m */; };
+		0252E4251C911DE8003F26D2 /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0252E41F1C911DE8003F26D2 /* DownloadManager.m */; };
+		0252E4261C911DE8003F26D2 /* DownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0252E4211C911DE8003F26D2 /* DownloadTask.m */; };
+		0252E4271C911DE8003F26D2 /* SessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0252E4231C911DE8003F26D2 /* SessionModel.m */; };
+		0252E42A1C911E75003F26D2 /* HomeControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0252E4291C911E75003F26D2 /* HomeControllerModel.m */; };
 		02A3B7811C7D610700DB54DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B7801C7D610700DB54DD /* main.m */; };
 		02A3B7841C7D610800DB54DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B7831C7D610800DB54DD /* AppDelegate.m */; };
 		02A3B78A1C7D610800DB54DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B7881C7D610800DB54DD /* Main.storyboard */; };
@@ -30,9 +35,20 @@
 		02A3B7DC1C7D850700DB54DD /* xiongchumo.png in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B7D31C7D850700DB54DD /* xiongchumo.png */; };
 		02A3B7DD1C7D850700DB54DD /* yuanlijuexing.png in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B7D41C7D850700DB54DD /* yuanlijuexing.png */; };
 		02A3B7E01C7D863500DB54DD /* HomeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B7DF1C7D863500DB54DD /* HomeViewCell.m */; };
+		02FD76C51C9AB22300FAB7D2 /* Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FD76C41C9AB22300FAB7D2 /* Demo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0252E41C1C911DE8003F26D2 /* DownloadEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadEntity.h; sourceTree = "<group>"; };
+		0252E41D1C911DE8003F26D2 /* DownloadEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadEntity.m; sourceTree = "<group>"; };
+		0252E41E1C911DE8003F26D2 /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		0252E41F1C911DE8003F26D2 /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		0252E4201C911DE8003F26D2 /* DownloadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTask.h; sourceTree = "<group>"; };
+		0252E4211C911DE8003F26D2 /* DownloadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTask.m; sourceTree = "<group>"; };
+		0252E4221C911DE8003F26D2 /* SessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionModel.h; sourceTree = "<group>"; };
+		0252E4231C911DE8003F26D2 /* SessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionModel.m; sourceTree = "<group>"; };
+		0252E4281C911E75003F26D2 /* HomeControllerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeControllerModel.h; sourceTree = "<group>"; };
+		0252E4291C911E75003F26D2 /* HomeControllerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeControllerModel.m; sourceTree = "<group>"; };
 		02A3B77C1C7D610700DB54DD /* DownLoadAndVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownLoadAndVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02A3B7801C7D610700DB54DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		02A3B7821C7D610700DB54DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +85,8 @@
 		02A3B7D41C7D850700DB54DD /* yuanlijuexing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yuanlijuexing.png; sourceTree = "<group>"; };
 		02A3B7DE1C7D863500DB54DD /* HomeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewCell.h; sourceTree = "<group>"; };
 		02A3B7DF1C7D863500DB54DD /* HomeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewCell.m; sourceTree = "<group>"; };
+		02FD76C31C9AB22300FAB7D2 /* Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo.h; sourceTree = "<group>"; };
+		02FD76C41C9AB22300FAB7D2 /* Demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +100,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0252E41A1C911DE8003F26D2 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0252E41B1C911DE8003F26D2 /* DownLoad */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		0252E41B1C911DE8003F26D2 /* DownLoad */ = {
+			isa = PBXGroup;
+			children = (
+				0252E41C1C911DE8003F26D2 /* DownloadEntity.h */,
+				0252E41D1C911DE8003F26D2 /* DownloadEntity.m */,
+				0252E41E1C911DE8003F26D2 /* DownloadManager.h */,
+				0252E41F1C911DE8003F26D2 /* DownloadManager.m */,
+				0252E4201C911DE8003F26D2 /* DownloadTask.h */,
+				0252E4211C911DE8003F26D2 /* DownloadTask.m */,
+				0252E4221C911DE8003F26D2 /* SessionModel.h */,
+				0252E4231C911DE8003F26D2 /* SessionModel.m */,
+			);
+			path = DownLoad;
+			sourceTree = "<group>";
+		};
 		02A3B7731C7D610700DB54DD = {
 			isa = PBXGroup;
 			children = (
@@ -101,9 +142,12 @@
 		02A3B77E1C7D610700DB54DD /* DownLoadAndVideo */ = {
 			isa = PBXGroup;
 			children = (
+				0252E41A1C911DE8003F26D2 /* Library */,
 				02A3B7C51C7D82A600DB54DD /* 公共方法 */,
 				02A3B7821C7D610700DB54DD /* AppDelegate.h */,
 				02A3B7831C7D610800DB54DD /* AppDelegate.m */,
+				02FD76C31C9AB22300FAB7D2 /* Demo.h */,
+				02FD76C41C9AB22300FAB7D2 /* Demo.m */,
 				02A3B7C91C7D850700DB54DD /* Resource */,
 				02A3B7971C7D79B400DB54DD /* TabController */,
 				02A3B79E1C7D79B400DB54DD /* ViewController */,
@@ -237,6 +281,8 @@
 		02A3B7AF1C7D79B400DB54DD /* model */ = {
 			isa = PBXGroup;
 			children = (
+				0252E4281C911E75003F26D2 /* HomeControllerModel.h */,
+				0252E4291C911E75003F26D2 /* HomeControllerModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -435,16 +481,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0252E4261C911DE8003F26D2 /* DownloadTask.m in Sources */,
 				02A3B7BF1C7D79B400DB54DD /* TabBarViewController.m in Sources */,
 				02A3B7C11C7D79B400DB54DD /* DiscoverViewController.m in Sources */,
 				02A3B7BD1C7D79B400DB54DD /* CustomButton.m in Sources */,
 				02A3B7841C7D610800DB54DD /* AppDelegate.m in Sources */,
+				0252E4251C911DE8003F26D2 /* DownloadManager.m in Sources */,
+				0252E4241C911DE8003F26D2 /* DownloadEntity.m in Sources */,
 				02A3B7E01C7D863500DB54DD /* HomeViewCell.m in Sources */,
 				02A3B7C41C7D79B400DB54DD /* MineViewController.m in Sources */,
 				02A3B7C21C7D79B400DB54DD /* HomeViewController.m in Sources */,
+				02FD76C51C9AB22300FAB7D2 /* Demo.m in Sources */,
 				02A3B7C31C7D79B400DB54DD /* MessageViewController.m in Sources */,
 				02A3B7C01C7D79B400DB54DD /* ComposeViewController.m in Sources */,
+				0252E4271C911DE8003F26D2 /* SessionModel.m in Sources */,
 				02A3B7BE1C7D79B400DB54DD /* CustomTabbar.m in Sources */,
+				0252E42A1C911E75003F26D2 /* HomeControllerModel.m in Sources */,
 				02A3B7811C7D610700DB54DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -62,7 +62,7 @@
     
     //主页
     HomeViewController *homeVc = [[HomeViewController alloc]init];
-    [self addChildViewController:homeVc andTitle:@"全部" andImage:[UIImage imageNamed:@"tabbar_discvoer"] andSelectedImage:[UIImage imageNamed:@"tabbar_discvoer_on"]];
+    [self addChildViewController:homeVc andTitle:@"首页" andImage:[UIImage imageNamed:@"tabbar_discvoer"] andSelectedImage:[UIImage imageNamed:@"tabbar_discvoer_on"]];
     
     //发现
     DiscoverViewController *discoverVc = [[DiscoverViewController alloc]init];
